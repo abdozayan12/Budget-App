@@ -11,15 +11,13 @@ class CategoriesController < ApplicationController
     @group = Group.new
     @options = [
       ['🛒'],
-      ['🍽️'],
       ['🚗'],
       ['💡'],
       ['🎮'],
       ['🛍️'],
       ['🏥'],
       ['✈️'],
-      ['🎓'],
-      ['📦']
+      ['🎓']
     ]
   end
 
