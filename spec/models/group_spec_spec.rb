@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe GroupSpec, type: :model do
+RSpec.describe Group, type: :model do
   let(:user) { User.create(name: 'John', email: 'john@example.com', password: 'password123') }
 
   it 'should have an integer user_id' do
@@ -20,3 +20,4 @@ RSpec.describe GroupSpec, type: :model do
     group.icon = nil
     expect(group).to_not be_valid
   end
+end
