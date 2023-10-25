@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe EntitySpec, type: :model do
+RSpec.describe Entity, type: :model do
   describe 'entity model' do
     let(:user) { User.create(name: 'John', email: 'john@example.com', password: 'password123') }
 

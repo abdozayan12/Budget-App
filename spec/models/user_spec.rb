@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe UserSpec, type: :model do
+RSpec.describe User, type: :model do
   describe 'User model ' do
     it ' is valid with valid attributes ' do
       user = User.new(
