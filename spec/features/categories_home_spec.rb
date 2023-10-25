@@ -8,11 +8,11 @@ RSpec.describe 'Categories home ' do
     category = Group.create(user_id: user.id, name: 'food', icon: 'icon')
 
     # Create some purchase records associated with the category
-    transaction1 = Entity.create(author_id: user.id, name: 'Trans 1', amount: 100 )
+    transaction1 = Entity.create(author_id: user.id, name: 'Trans 1', amount: 100)
     EntityGroup.create(entity_id: transaction1.id, group_id: category.id)
-    transaction2 = Entity.create(author_id: user.id, name: 'Trans 2', amount: 200 )
+    transaction2 = Entity.create(author_id: user.id, name: 'Trans 2', amount: 200)
     EntityGroup.create(entity_id: transaction2.id, group_id: category.id)
-    transaction3 = Entity.create(author_id: user.id, name: 'Trans 3', amount: 300 )
+    transaction3 = Entity.create(author_id: user.id, name: 'Trans 3', amount: 300)
     EntityGroup.create(entity_id: transaction3.id, group_id: category.id)
 
     sign_in user
