@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Categories home ' do
+RSpec.describe 'Categories home' do
   include Devise::Test::IntegrationHelpers
 
   before :each do
@@ -19,23 +19,23 @@ RSpec.describe 'Categories home ' do
     visit authenticated_root_path
   end
 
-  it 'see the title in navbar ' do
+  it 'see the title in navbar' do
     expect(page).to have_content('Categories')
   end
 
-  it 'see the category name ' do
+  it 'see the category name' do
     expect(page).to have_content('food')
   end
 
   it 'see the total transaction for this category' do
-    expect(page).to have_content(600)
+    expect(page).to have_content('$600.00')
   end
 
   it 'see the icon' do
     expect(page).to have_content('icon')
   end
 
-  it 'see the add category button ' do
+  it 'see the add category button' do
     expect(page).to have_link('ADD CATEGORY')
   end
 
