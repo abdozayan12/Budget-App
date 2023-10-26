@@ -1,7 +1,7 @@
 <div>
   <% @title = "New Categories" %>
   <%= render "shared/header", locals: { title: @title }, back: true %>
-  
+
   <%= form_with model: @group, class:"pt-12" , url: categories_path do |form| %>
     <div class="flex justify-center w-full">
           <div class="flex flex-col w-[90%] p-5 border max-w-wrapper">
