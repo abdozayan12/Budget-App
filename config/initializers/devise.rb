@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Assuming you have not yet modified this file, each configuration option below
 # is set to its default value. Note that some are commented out while others
 # are not: uncommented lines are intended to protect your configuration from
@@ -14,7 +12,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'de65cc7f4f9f7ce53f63112036d901d576587e8ff2e34eca66ea21988abc9b351bc3162bef9c96b607600785f7a593e979dab9bf59e903149ebc07dc4bf94ce5'
+  # config.secret_key = '76028726c315bc224e85b1205a09ab3f51bdcdbf824ee41b4d4b1ecd9b1e8ae828104eb0b0bb7960b65ad642db0b36dc77b90309b308876dde31c3e1378fb98f'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -126,7 +124,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = 'd6cbd05d87633aba7b6135a1d74c487fbbb0a3f3fec7f299c9b55916658da6c3de89ee25f6b4b5a3f63ba40fe7b3446c97ab8ca03d7fc59b868ccca256b67eb0'
+  # config.pepper = '0d99fb7946629215a74a7b83d3154fc71e86d48daf80f7b060538f57ed643f478ffadfd20b40f949b36e75bb32279699f55911196615613947737fe920fc1f21'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -299,7 +297,7 @@ Devise.setup do |config|
   # ==> Hotwire/Turbo configuration
   # When using Devise with Hotwire/Turbo, the http status for error responses
   # and some redirects must match the following. The default in Devise for existing
-  # apps is `200 OK` and `302 Found` respectively, but new apps are generated with
+  # apps is `200 OK` and `302 Found respectively`, but new apps are generated with
   # these new defaults that match Hotwire/Turbo behavior.
   # Note: These might become the new default in future versions of Devise.
   config.responder.error_status = :unprocessable_entity

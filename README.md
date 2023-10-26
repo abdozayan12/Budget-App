@@ -14,6 +14,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [📽️ Video Walkthrogh ](#️-video-walkthrogh-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -55,10 +57,20 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
+<!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://stock-wise.vercel.app/)
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+
+- [Live Demo Link](https://budget-app-8pq6.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Video Walkthrogh -->
+
+## 📽️ Video Walkthrogh <a name="video-walkthroug"></a>
+
+- [Video Walkthrough](..................)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 

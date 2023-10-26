@@ -2,6 +2,10 @@
 
 one:
   author: one
+  name: MyString
+  amount: 1
 
 two:
   author: two
+  name: MyString
+  amount: 1

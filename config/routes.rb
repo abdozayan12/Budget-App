@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     sign_out: 'logout',
     sign_up: 'register'
   }
+  
   authenticated :user do
     root 'categories#home', as: :authenticated_root
   end
