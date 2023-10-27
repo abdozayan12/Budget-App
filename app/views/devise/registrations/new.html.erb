@@ -1,0 +1,19 @@
+<% @title = "Register" %>
+
+<%= render "shared/header", locals: { title: @title }, back: true %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'flex flex-col py-16' }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "Fullname" %>
+
+  <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+
+  
+  <%= f.password_field :password, autocomplete: "new-password", placeholder: "Password #{@minimum_password_length && "#{@minimum_password_length} characters minimum"}" %>
+
+  <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Password Confirmation" %>
+
+  <%= f.submit "Register", class: "mt-4 bg-primary text-white py-3 mx-5" %>
+<% end %>
+

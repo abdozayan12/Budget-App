@@ -1,0 +1,24 @@
+<div class="mb-10">
+  <% @title = "Categories" %>
+  <%= render "shared/header", locals: { title: @title }, back: false %>
+  
+  <% if @categories.empty?%>
+          <p class="text-center pt-16">Currently you don't have any categories</p>
+        <% else %>
+          <ul class="flex flex-col justify-center pt-12">
+              <% @categories.each do |category| %>
+                  <%= link_to category_transactions_path(category_id: category.id) do %>
+                      <li class="category-list mx-auto w-[90%] flex items-center justify-between shadow-lg px-3 py-5  my-5 bg-white transition-all hover:scale-105">
+                          <div class="flex gap-1 items-center">
+                            <div class="text-4xl me-4"><%= category.icon %></div>
+                            <div class="text-lg font-semibold"><%= category.name %></div>
+                          </div>
+                          <div class="text-lg font-semibold">$ <%= format_large_number(category.entities.sum(:amount)) %></div>
+                      </li>
+                  <% end %>
+              <% end %>
+          </ul>
+        <% end %>
+
+  <%= link_to "ADD CATEGORY", new_category_path , class: 'fixed bottom-0 border border-white text-center bg-secondary text-white py-3 w-full'%>
+</div>

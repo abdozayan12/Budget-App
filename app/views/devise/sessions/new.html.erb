@@ -1,0 +1,13 @@
+<% @title = "Log In" %>
+
+<%= render "shared/header", locals: { title: @title }, back: true %>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'flex flex-col py-16 ' }) do |f| %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+
+    <%= f.submit "Log in", class: "mt-4 bg-primary text-white py-3 mx-5" %>
+<% end %>
+
+<%= render "devise/shared/links" %>

@@ -1,0 +1,19 @@
+databases:
+  - name: Budget-App
+    databaseName: budget_app_z57d
+    user: budget_app_z57d_user
+
+
+services:
+  - type: web
+    name: Budget-App
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Budget-App
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
