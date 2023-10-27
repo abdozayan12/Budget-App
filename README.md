@@ -68,7 +68,7 @@
 
 ## 📽️ Video Walkthrogh <a name="video-walkthroug"></a>
 
-- [Video Walkthrough](..................)
+- [Video Walkthrough](https://www.loom.com/share/da1215bece3c4d7db9dac56f2f074e91?sid=4d0c88b2-c3ea-4524-b109-8ff0095dc087)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
