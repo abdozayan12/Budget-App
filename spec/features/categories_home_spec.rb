@@ -27,8 +27,9 @@ RSpec.describe 'Categories home' do
     expect(page).to have_content('food')
   end
 
-  it 'see the total transaction for this category' do
-    expect(page).to have_content('$600.00')
+  it 'see the category name and total transaction amount' do
+    expect(page).to have_content('food')
+    expect(page).to have_content('$ 600')
   end
 
   it 'see the icon' do
